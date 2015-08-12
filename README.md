@@ -3311,7 +3311,8 @@ resource cleanup when possible.
   ```
 
 * <a name="dont-abuse-gsub"></a>
-  Don't use `String#gsub` in scenarios in which you can use a faster more specialized alternative.
+  Don't use `String#gsub` in scenarios where you can use a faster, more
+  specialized alternative.
 <sup>[[link](#dont-abuse-gsub)]</sup>
 
     ```Ruby
@@ -3328,7 +3329,7 @@ resource cleanup when possible.
     ```
 
 * <a name="heredocs"></a>
-  When using heredocs for multi-line strings keep in mind the fact that they
+  When using heredocs for multi-line strings, keep in mind the fact that they
   preserve leading whitespace. It's a good practice to employ some margin based
   on which to trim the excessive whitespace.
 <sup>[[link](#heredocs)]</sup>
@@ -3350,7 +3351,7 @@ resource cleanup when possible.
 > -- Jamie Zawinski
 
 * <a name="no-regexp-for-plaintext"></a>
-  Don't use regular expressions if you just need plain text search in string:
+  Don't use regular expressions if you just need plain text search in a string:
   `string['text']`
 <sup>[[link](#no-regexp-for-plaintext)]</sup>
 
@@ -3365,7 +3366,7 @@ resource cleanup when possible.
   ```
 
 * <a name="non-capturing-regexp"></a>
-  Use non-capturing groups when you don't use captured result of parentheses.
+  Use non-capturing groups when you don't use captured result.
 <sup>[[link](#non-capturing-regexp)]</sup>
 
   ```Ruby
